@@ -18,18 +18,14 @@ const CannonBase = (props) => {
   };
   return (
     <g>
-      {" "}
-      <path
-        style={cannonBaseStyle}
-        d={pathFromBezierCurve(cubicBezierCurve)}
-      />{" "}
+      <path style={cannonBaseStyle} d={pathFromBezierCurve(cubicBezierCurve)} />
       <line
         x1={-halfBase}
         y1={height}
         x2={halfBase}
         y2={height}
         style={cannonBaseStyle}
-      />{" "}
+      />
     </g>
   );
 };
