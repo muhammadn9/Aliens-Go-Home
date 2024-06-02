@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Login = (props) => {
   const button = {
@@ -8,21 +8,21 @@ const Login = (props) => {
     width: 600,
     height: 300,
     style: {
-      fill: "transparent",
-      cursor: "pointer",
+      fill: 'transparent',
+      cursor: 'pointer',
     },
     onClick: props.authenticate,
   };
 
   const text = {
-    textAnchor: "middle", // center
+    textAnchor: 'middle', // center
     x: 0, // center relative to X axis
     y: -440, // 440 up
     style: {
       fontFamily: '"Joti One", cursive',
       fontSize: 45,
-      fill: "#e3e3e3",
-      cursor: "pointer",
+      fill: '#e3e3e3',
+      cursor: 'pointer',
     },
     onClick: props.authenticate,
   };
@@ -30,7 +30,9 @@ const Login = (props) => {
   return (
     <g filter="url(#shadow)">
       <rect {...button} />
-      <text {...text}>Login to participate!</text>
+      <text {...text}>
+        Login to participate!
+      </text>
     </g>
   );
 };

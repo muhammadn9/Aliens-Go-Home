@@ -4,6 +4,6 @@ export default (state, initialGameState) => {
     gameState: {
       ...initialGameState,
       started: true,
-    },
-  };
+    }
+  }
 };

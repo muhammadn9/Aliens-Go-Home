@@ -1,11 +1,11 @@
-import React from "react";
-import { pathFromBezierCurve } from "../utils/formulas";
+import React from 'react';
+import { pathFromBezierCurve } from '../utils/formulas';
 
 const Title = () => {
   const textStyle = {
     fontFamily: '"Joti One", cursive',
     fontSize: 120,
-    fill: "#cbca62",
+    fill: '#cbca62',
   };
 
   const aliensLineCurve = {
@@ -50,14 +50,24 @@ const Title = () => {
   return (
     <g filter="url(#shadow)">
       <defs>
-        <path id="AliensPath" d={pathFromBezierCurve(aliensLineCurve)} />
-        <path id="GoHomePath" d={pathFromBezierCurve(goHomeLineCurve)} />
+        <path
+          id="AliensPath"
+          d={pathFromBezierCurve(aliensLineCurve)}
+        />
+        <path
+          id="GoHomePath"
+          d={pathFromBezierCurve(goHomeLineCurve)}
+        />
       </defs>
       <text {...textStyle}>
-        <textPath xlinkHref="#AliensPath">Aliens,</textPath>
+        <textPath xlinkHref="#AliensPath">
+          Aliens,
+        </textPath>
       </text>
       <text {...textStyle}>
-        <textPath xlinkHref="#GoHomePath">Go Home!</textPath>
+        <textPath xlinkHref="#GoHomePath">
+          Go Home!
+        </textPath>
       </text>
     </g>
   );

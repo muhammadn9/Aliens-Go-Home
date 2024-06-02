@@ -1,13 +1,10 @@
 import {
-  LEADERBOARD_LOADED,
-  LOGGED_IN,
-  MOVE_OBJECTS,
-  SHOOT,
-  START_GAME,
-} from "../actions";
-import moveObjects from "./moveObjects";
-import startGame from "./startGame";
-import shoot from "./shoot";
+  LEADERBOARD_LOADED, LOGGED_IN,
+  MOVE_OBJECTS, SHOOT, START_GAME
+} from '../actions';
+import moveObjects from './moveObjects';
+import startGame from './startGame';
+import shoot from './shoot';
 
 const initialGameState = {
   started: false,

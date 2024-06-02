@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { pathFromBezierCurve } from "../utils/formulas";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { pathFromBezierCurve } from '../utils/formulas';
 
 const CannonPipe = (props) => {
   const cannonPipeStyle = {
-    fill: "#999",
-    stroke: "#666",
-    strokeWidth: "2px",
+    fill: '#999',
+    stroke: '#666',
+    strokeWidth: '2px',
   };
   const transform = `rotate(${props.rotation}, 0, 0)`;
 
@@ -36,7 +36,10 @@ const CannonPipe = (props) => {
 
   return (
     <g transform={transform}>
-      <path style={cannonPipeStyle} d={pathFromBezierCurve(cubicBezierCurve)} />
+      <path
+        style={cannonPipeStyle}
+        d={pathFromBezierCurve(cubicBezierCurve)}
+      />
       <line
         x1={-halfMuzzle}
         y1={-yBasis}
