@@ -8,7 +8,7 @@ import io from "socket.io-client";
 Auth0.configure({
   domain: "dev-mcwez2ru52r0surd.us.auth0.com",
   clientID: "1xaUiip6EfRYIuD7VQlQFwVKFf5rCik3",
-  redirectUri: "http://localhost:3000/",
+  redirectUri: "https://aliens-go-home-five.vercel.app/",
   responseType: "token id_token",
   scope: "openid profile manage:points",
   audience: "https://aliens-go-home-five.vercel.app/",
